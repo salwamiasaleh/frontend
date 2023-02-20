@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+header {
+  background-image: url(../images/img/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Montserrat", sans-serif;
+}
+.nav-link,
+.navbar-brand {
+  color: white;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* .content h2 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.content h3 {
+  font-size: 40px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+ 
+} */
+.height{
+  height:100px;
+}
+#ani{
+
+   /* width:200px;  */
+}
+.ani::after {
+  content: "";
+
+  /* white-space: nowrap; or pre-wrap */
+
+
+  animation: change 5s infinite ;
+  
+
+}
+.secondsec {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+  margin-bottom: 100px !important;
+}
+/* #btn1, #btn2{
+} */
+#btn1:hover {
+  background-color: black;
+  color: white;
+}
+
+#btn2:hover {
+  background-color: white;
+  color: black;
+}
+.thirdsec {
+  background-color: lightgrey;
+  text-align: center;
+}
+.thirdsec i {
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  transition: all 1s;
+} 
+.thirdsec i:hover {
+  background: black;
+  color: white;
+}
+.card {
+  margin-bottom: 30px;
+}
+
+.serviceitem {
+  position: relative;
+  overflow: hidden;
+}
+
+.serviceitem .layer {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    top: 150%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* transform: translateY(200px); */
+  
+    transition: top 2s;
+  }
+  
+  .serviceitem:hover .layer {
+    top:5px;
+  
+  }
+  .carousel-indicators [data-bs-target]{
+    width:10px;
+    height: 10px;
+    background-color:grey;
+    border-radius:50%;
+  }
+
+  .fifthsection{
+    height:80vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .fifthsection h3{
+    font-weight: 800;
+    font-size: 200;
+  }
+.sixthsection{
+ 
+    font-weight: 600;
+    background-color: lightgrey;
+    height:60vh;
+}
+.seventhsection a{
+    text-decoration: none;
+    color:black;
+   
+}
+.itemseven img{
+    transition:all 0.25s;
+    overflow: hidden;
+    
+}
+.itemseven img:hover{
+    transform: scale(1.1);
+
+}
+.lastsec i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 1s;
+  }
+  .lastsec i:hover {
+    background: black;
+    color: white;
+  }
+ @keyframes change {
+     
+      5%{
+          content: "E|";
+      }
+      10%{
+          content: "EB|";
+      }
+      12%{
+          content: "EB |";
+      }
+      15%{
+          content: "EB D|";
+      }
+      20%{
+          content: "EB DE|";
+      }
+      25%{
+          content: "EB DEV|";
+      }
+      30%{
+          content: "EB DEVE|";
+      }
+      35%{
+          content: "EB DEVEL|";
+      }
+      40%{
+          content: "EB DEVELO|";
+      }
+      45%{
+          content: "EB DEVELOP|";
+      }
+      50%{
+          content: "EB DEVELOPE|";
+      }
+      55%{
+          content: "EB DEVELOPER|";
+      }
+  }   
